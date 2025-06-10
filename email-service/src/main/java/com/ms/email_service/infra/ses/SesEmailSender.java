@@ -18,9 +18,8 @@ public class SesEmailSender implements EmailSenderGateway {
 
     @Override
     public void sendEmail(String to, String subject, String body) {
-        // request para enviar para aws
         SendEmailRequest request = new SendEmailRequest()
-                .withSource("6isinha6@gmail.com")
+                .withSource("contato.isabelhenrique@gmail.com")
                 .withDestination(new Destination().withToAddresses(to))
                 .withMessage(new Message()
                         .withSubject(new Content(subject))
