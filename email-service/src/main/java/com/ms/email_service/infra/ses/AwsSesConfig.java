@@ -25,9 +25,8 @@ public class AwsSesConfig {
     public AmazonSimpleEmailService amazonSimpleEmailService() {
         AWSCredentials credentials = new BasicAWSCredentials(accessKeyId, secretKey);
 
-        // 2. Construye el cliente de SES especificando la región y las credenciales
         return AmazonSimpleEmailServiceClientBuilder.standard()
-                .withRegion(region) // Especifica la región aquí
+                .withRegion(region)
                 .withCredentials(new AWSStaticCredentialsProvider(credentials))
                 .build();
     }
