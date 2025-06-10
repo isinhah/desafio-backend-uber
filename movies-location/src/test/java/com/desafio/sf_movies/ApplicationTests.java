@@ -1,10 +1,10 @@
-package com.desafio.movies_location;
+package com.desafio.sf_movies;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MoviesLocationApplicationTests {
+class ApplicationTests {
 
 	@Test
 	void contextLoads() {

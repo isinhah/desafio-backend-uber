@@ -1,13 +1,13 @@
-package com.desafio.movies_location;
+package com.desafio.sf_movies;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MoviesLocationApplication {
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MoviesLocationApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 
 }
